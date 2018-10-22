@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeOfView" parent="Cards">
+        <item name="android:background">@color/colorTranslucentCardBg</item>
+        <item name="android:layout_margin">@dimen/view_space_16</item>
+        <item name="shape_roundRect_bottomRightRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_bottomLeftRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_topLeftRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_topRightRadius">@dimen/view_space_16</item>
+        <item name="android:elevation">@dimen/view_space_8</item>
+    </style>
+
+    <style name="Cards" parent="MatchWidthWrapHeight">
+        <item name="android:layout_margin">@dimen/view_space_16</item>
+        <item name="android:padding">@dimen/view_space_8</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_trans_rect</item>
+    </style>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.shapeofview.shapes.RoundRectView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ShapeOfView"
+    android:background="@color/colorDialogBg"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/Cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_rect"
+        >
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/btn_tv_title"
+            style="@style/ConsMatchWidthWrapHeight"
+            android:gravity="center"
+            android:padding="@dimen/view_space_dialog"
+            android:text="@string/placeholder"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_heading_22"
+            app:btnTxtColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:typeface="bold"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/btn_tv_content_msg"
+            style="@style/ConsMatchWidthWrapHeight"
+            android:layout_margin="@dimen/view_space_dialog"
+            android:clickable="false"
+            android:gravity="center"
+            android:padding="@dimen/view_space_dialog"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/txt_heading_18"
+            app:btnTxtColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_tv_title"
+            app:typeface="light"
+            />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/view_divider_width"
+            android:layout_marginTop="@dimen/view_space_dialog"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_tv_content_msg"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/btn_left"
+            style="@style/CustomBtn.DialogBtn"
+            android:text="@string/placeholder"
+            app:layout_constraintEnd_toStartOf="@+id/btn_right"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_divider"
+            />
+
+        <View
+            android:layout_width="@dimen/view_divider_width"
+            android:layout_height="0dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@id/btn_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_divider"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/btn_right"
+            style="@style/CustomBtn.DialogBtn"
+            android:text="@string/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_left"
+            app:layout_constraintTop_toBottomOf="@id/view_divider"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</com.github.florent37.shapeofview.shapes.RoundRectView>

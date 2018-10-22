@@ -1,0 +1,97 @@
+package com.example.android.tourguide.ui.activities.navdrawer;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.android.tourguide.R;
+import com.example.android.tourguide.ui.fragments.EventFragment;
+import com.example.android.tourguide.ui.fragments.FoodyFragment;
+import com.example.android.tourguide.ui.fragments.HealthyFragment;
+import com.example.android.tourguide.ui.fragments.PlacesFragment;
+import com.example.android.tourguide.ui.fragments.ShoppingFragment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ViewPagerAdapter extends FragmentPagerAdapter {
+
+    private List<String> screenTitles;
+    private Context context;
+    private Bundle bundle;
+    private EventFragment eventFragment;
+    private FoodyFragment foodyFragment;
+    private HealthyFragment healthyFragment;
+    private PlacesFragment placesFragment;
+    private ShoppingFragment shoppingFragment;
+
+    public ViewPagerAdapter(Context context, FragmentManager fm, Bundle bundle) {
+        super(fm);
+        this.context = context;
+        this.bundle = bundle;
+        screenTitles = new ArrayList<>();
+        populateScreenTitles(context, screenTitles);
+        eventFragment = new EventFragment();
+        foodyFragment = new FoodyFragment();
+        healthyFragment = new HealthyFragment();
+        placesFragment = new PlacesFragment();
+        shoppingFragment = new ShoppingFragment();
+    }
+
+    private void populateScreenTitles(Context context, List<String> screenTitles) {
+        screenTitles.add(context.getString(R.string.label_events));
+        screenTitles.add(context.getString(R.string.label_food));
+        screenTitles.add(context.getString(R.string.label_health));
+        screenTitles.add(context.getString(R.string.label_places));
+        screenTitles.add(context.getString(R.string.label_shopping));
+    }
+
+    public Bundle getBundle() {
+        return bundle;
+    }
+
+    public void setBundle(Bundle bundle) {
+        this.bundle = bundle;
+    }
+
+    @Override
+    public Fragment getItem(int i) {
+        if (i == 0) {
+            updateFragment(eventFragment, bundle, false);
+            return eventFragment;
+        } else if (i == 1) {
+            updateFragment(foodyFragment, bundle, false);
+            return foodyFragment;
+        } else if (i == 2) {
+            updateFragment(healthyFragment, bundle, false);
+            return healthyFragment;
+        } else if (i == 3) {
+            updateFragment(placesFragment, bundle, false);
+            return placesFragment;
+        } else {
+            updateFragment(shoppingFragment, bundle, false);
+            return shoppingFragment;
+        }
+    }
+
+    public void updateFragment(Fragment fragment, Bundle bundle, boolean setGlobalBundle) {
+        fragment.setArguments(bundle);
+        if (setGlobalBundle) {
+            setBundle(bundle);
+        }
+    }
+
+    @Override
+    public int getCount() {
+        return 5;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return screenTitles.get(position);
+    }
+}

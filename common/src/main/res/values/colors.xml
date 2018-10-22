@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color for toolbar, actionBar etc...-->
+    <color name="colorTransparent">#00000000</color>
+    <!--Color for statusBar-->
+    <!--Color for checked and selected status for radioButton, checkBox etc...-->
+    <!--Dialog background-->
+    <color name="colorDialogBg">#c8ffffff</color>
+    <!--Button Gradient color start-->
+    <!--Button Gradient color end-->
+    <color name="colorEndButton">#64939292</color>
+    <!--Background of cards-->
+    <color name="colorTranslucentCardBg">#7dffffff</color>
+    <!--Background color of status bar-->
+    <color name="colorTranslucentStatusbar">#649c7c7c</color>
+</resources>

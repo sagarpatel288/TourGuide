@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.android.tourguide"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*Note: You must configure data binding for app modules that depend on libraries that use data binding,
+    even if the app module doesn't directly use data binding.
+    Source: https://developer.android.com/topic/libraries/data-binding/start
+    */
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies { configuration ->
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidSupportLibs(configuration)
+    dataBinding(configuration)
+    androidLifeCycleComponents(configuration)
+    customViews(configuration)
+    utils(configuration)
+    implementation project(":common")
+}
+
+void androidSupportLibs(configurations) {
+    //Native Android libraries
+    configurations.implementation "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    configurations.implementation "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
+    configurations.implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    configurations.implementation "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+    configurations.implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+}
+
+void dataBinding(configurations) {
+    //Butter knife for view binding
+    configurations.implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    configurations.annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+}
+
+void androidLifeCycleComponents(configurations) {
+    //Android architecture life cycle components
+    configurations.implementation "android.arch.lifecycle:extensions:$rootProject.ext.lifeCycle"
+    configurations.annotationProcessor "android.arch.lifecycle:compiler:$rootProject.ext.lifeCycle"
+}
+
+void customViews(configurations) {
+    //Library to give any shape with elevation if possible to views
+    configurations.implementation "com.github.florent37:shapeofview:$rootProject.ext.shapeOfView"
+    //Circle image view with border, shadow and elevation
+    configurations.implementation 'com.mikhaellopez:circularimageview:3.2.0'
+}
+
+void utils(configurations) {
+    configurations.implementation "com.github.bumptech.glide:glide:$rootProject.ext.glide"
+    configurations.annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.ext.glide"
+    configurations.implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+}

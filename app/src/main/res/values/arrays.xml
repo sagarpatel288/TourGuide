@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="sliding_images">
+        <item>@drawable/golf_club</item>
+        <item>@drawable/kankaria_lake</item>
+        <item>@drawable/heritage_walk</item>
+        <item>@drawable/dada_harir_vav</item>
+        <item>@drawable/gandhiji_quote</item>
+        <item>@drawable/gandhi_ashram</item>
+        <item>@drawable/sundarvan</item>
+    </integer-array>
+</resources>

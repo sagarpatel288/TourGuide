@@ -1,0 +1,25 @@
+<resources>
+
+    <!--Texts for button to submit answers [CHAR LIMIT = 10]-->
+    <string name="label_submit">Submit</string>
+    <!--Placeholder text to check [CHAR LIMIT = 10, Single line]-->
+    <string name="placeholder">placeholder</string>
+    <!--Placeholder text to check [CHAR LIMIT = NO, Multiple lines]-->
+    <string name="placeholder_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <!--Title of the alert dialog [CHAR LIMIT = 30, Single line]-->
+    <string name="label_alert">Alert</string>
+    <!--Left button on alert dialog [CHAR LIMIT = 15, Single line]-->
+    <string name="label_yes">Yes</string>
+    <!--Right button on alert dialog [CHAR LIMIT = 15, Single line-->
+    <string name="label_no">No</string>
+    <!--Left button on alert dialog [CHAR LIMIT = 15, Single line]-->
+    <string name="label_reset">Reset</string>
+    <!--Right button on alert dialog [CHAR LIMIT = 15, Single line-->
+    <string name="label_dismiss">Dismiss</string>
+    <!--Title on alert dialog [CHAR LIMIT = 15, Single line-->
+    <string name="label_result">Result</string>
+    <!--Title on button [CHAR LIMIT = 10, Single line-->
+    <string name="label_check">Check</string>
+    <!--Text on alert dialog [CHAR LIMIT = 15, Single line]-->
+    <string name="label_ok">ok</string>
+</resources>

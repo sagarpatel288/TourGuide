@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="cd_slider">Slider Menu</string>
+    <string name="cd_sliding_images">Sliding Images</string>
+
+    <!-- Category name for event [CHAR LIMIT=20] -->
+    <string name="label_events">Events</string>
+    <!-- Category name for food [CHAR LIMIT=20] -->
+    <string name="label_food">Food</string>
+    <!-- Category name for health [CHAR LIMIT=20] -->
+    <string name="label_health">Health</string>
+    <!-- Category name for location [CHAR LIMIT=20] -->
+    <string name="label_places">Places</string>
+    <!-- Category name for shopping [CHAR LIMIT=20] -->
+    <string name="label_shopping">Shopping</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_loading">loading…</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_title">Title</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_subtitle">Subtitle</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_area">Area</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_category">Category</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_reviews">(108)</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_distance">Distance</string>
+    <!--Text on tab [CHAR LIMIT = 15, Single line]-->
+    <string name="label_about">About</string>
+    <!--Text on tab [CHAR LIMIT = 15, Single line]-->
+    <string name="label_reviews_title">Reviews</string>
+    <!--Text on tab [CHAR LIMIT = 15, Single line]-->
+    <string name="label_media">Media</string>
+    <!--Text on list [CHAR LIMIT = 15, Single line]-->
+    <string name="label_description">Description</string>
+    <string name="label_detail">Detail</string>
+</resources>

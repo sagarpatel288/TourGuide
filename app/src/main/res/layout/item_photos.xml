@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <com.library.android.common.customviews.CustomImageView
+        android:id="@+id/civ"
+        android:layout_width="@dimen/height_90"
+        android:layout_height="@dimen/height_90"
+        android:layout_margin="@dimen/view_space_12"
+        android:scaleType="centerCrop"
+        />
+
+</layout>

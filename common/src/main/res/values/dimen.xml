@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--View space-->
+    <dimen name="view_space_2">2dp</dimen>
+    <dimen name="view_space_4">4dp</dimen>
+    <dimen name="view_space_8">8dp</dimen>
+    <dimen name="view_space_12">12dp</dimen>
+    <dimen name="view_space_16">16dp</dimen>
+    <dimen name="view_space_18">18dp</dimen>
+    <dimen name="view_space_20">20dp</dimen>
+    <dimen name="view_space_22">22dp</dimen>
+    <dimen name="view_space_24">24dp</dimen>
+    <dimen name="view_space_32">32dp</dimen>
+    <dimen name="view_space_40">40dp</dimen>
+    <dimen name="view_space_45">45dp</dimen>
+    <dimen name="view_space_50">50dp</dimen>
+    <dimen name="view_space_55">55dp</dimen>
+    <dimen name="view_space_60">60dp</dimen>
+    <dimen name="view_space_65">65dp</dimen>
+    <dimen name="view_space_70">70dp</dimen>
+    <dimen name="view_space_75">75dp</dimen>
+    <dimen name="view_space_80">80dp</dimen>
+
+
+    <!--View height and width-->
+    <dimen name="height_85">85dp</dimen>
+    <dimen name="height_90">90dp</dimen>
+    <dimen name="height_95">95dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_110">110dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="height_130">130dp</dimen>
+    <dimen name="height_140">140dp</dimen>
+    <dimen name="height_150">150dp</dimen>
+    <dimen name="height_160">160dp</dimen>
+    <dimen name="height_170">170dp</dimen>
+    <dimen name="height_180">180dp</dimen>
+    <dimen name="height_view_divider">1dp</dimen>
+
+    <!--Text headings-->
+    <!--Text size for each and every question title-->
+    <dimen name="text_heading_25">25sp</dimen>
+    <!--TextView size-->
+    <dimen name="txt_heading_22">22sp</dimen>
+    <!--Text size for each and every answer-->
+    <dimen name="text_heading_20">20sp</dimen>
+    <!--TextView size-->
+    <dimen name="txt_heading_18">18sp</dimen>
+    <!--TextView size-->
+    <dimen name="txt_heading_16">16sp</dimen>
+    <!--TextView size-->
+    <dimen name="txt_heading_14">14sp</dimen>
+    <!--Buttons-->
+    <!--Button radius-->
+    <dimen name="radius_btn">60dp</dimen>
+    <!--Padding for custom button-->
+    <dimen name="padding_custom_btn_top_bottom">10dp</dimen>
+
+    <!--Dialog-->
+    <!--Dialog view space-->
+    <dimen name="view_space_dialog">18dp</dimen>
+    <!--Width of divider that separates views-->
+    <dimen name="view_divider_width">1dp</dimen>
+    <!--Others-->
+</resources>

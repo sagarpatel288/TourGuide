@@ -1,0 +1,216 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--color for toolbar, actionBar-->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <!--color for statusBar-->
+        <item name="colorPrimaryDark">@color/colorTranslucentStatusbar</item>
+        <!--Color for checked and selected status for radioButton, checkBox etc...-->
+        <item name="colorAccent">@android:color/white</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/design_default_color_primary</item>
+        <!--Checkboxes-->
+        <item name="android:checkboxStyle">@style/MyCheckbox</item>
+        <item name="checkboxStyle">@style/MyCheckbox</item>
+        <!--Radio buttons-->
+        <item name="android:radioButtonStyle">@style/MyRadioButton</item>
+        <item name="radioButtonStyle">@style/MyRadioButton</item>
+    </style>
+
+    <!--Style for the checkboxes-->
+    <style name="MyCheckbox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="buttonTint">@android:color/white</item>
+    </style>
+
+    <!--Style for the radio buttons-->
+    <style name="MyRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@android:color/white</item>
+    </style>
+
+    <!--Style for the activity that has quiz cards-->
+    <style name="AppTheme.QuizzTheme">
+        <item name="android:windowBackground">@drawable/glass</item>
+    </style>
+
+    <!--Sets the width and height to match parent-->
+    <style name="MatchWidthMatchHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Sets width to match parent and height to wrap content-->
+    <style name="MatchWidthWrapHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Style for cards. Overrides v21 for elevation-->
+    <style name="Cards" parent="MatchWidthWrapHeight">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_trans_rect</item>
+    </style>
+
+    <!--Style for shapeOfView to give elevation and custom shape to any view-->
+    <style name="ShapeOfView" parent="Cards">
+        <item name="android:background">@color/colorTranslucentCardBg</item>
+        <item name="android:layout_margin">@dimen/view_space_16</item>
+        <item name="shape_roundRect_bottomRightRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_bottomLeftRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_topLeftRadius">@dimen/view_space_16</item>
+        <item name="shape_roundRect_topRightRadius">@dimen/view_space_16</item>
+    </style>
+
+    <!--Sets width and height to wrap content-->
+    <style name="WrapWidthWrapHeight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Style for button e.g. Submit button to submit the answers-->
+    <style name="WrapWidthWrapHeight.Btn">
+        <item name="android:textSize">@dimen/text_heading_20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bg_gradient_rect</item>
+        <item name="btnTxtColor">@android:color/white</item>
+        <item name="btnTxtPressedColor">@android:color/white</item>
+        <item name="typeface">bold</item>
+    </style>
+
+    <!--Style for user input field-->
+    <style name="MatchWidthWrapHeight.TxtInput">
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <!--Style for each and every question title-->
+    <style name="MatchWidthWrapHeight.TxtHeadingQue">
+        <item name="android:padding">@dimen/view_space_16</item>
+        <item name="android:textSize">@dimen/text_heading_25</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Style to be set for result text view-->
+
+    <!--Style for each and every radioGroup available in app-->
+    <style name="MatchWidthWrapHeight.Rg">
+        <item name="android:padding">@dimen/view_space_8</item>
+        <item name="android:textSize">@dimen/text_heading_20</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--View space for checkboxes-->
+    <style name="Checkbox" parent="MatchWidthWrapHeight.Rg">
+        <item name="android:layout_marginLeft">@dimen/view_space_8</item>
+        <item name="android:layout_marginStart">@dimen/view_space_8</item>
+    </style>
+
+    <!--Style for card views-->
+
+    <!--Style for Custom Button of MainActivity-->
+    <style name="CustomBtn" parent="WrapWidthWrapHeight.Btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/view_space_16</item>
+        <item name="android:layout_marginStart">@dimen/view_space_8</item>
+        <item name="android:layout_marginEnd">@dimen/view_space_8</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingStart">@dimen/view_space_8</item>
+        <item name="android:paddingEnd">@dimen/view_space_8</item>
+        <item name="android:paddingTop">@dimen/padding_custom_btn_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/padding_custom_btn_top_bottom</item>
+    </style>
+
+    <!--Style for the trailed buttons of MainActivity-->
+
+    <!--Style for Dialog buttons-->
+    <style name="CustomBtn.DialogBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/txt_heading_16</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingStart">@dimen/view_space_8</item>
+        <item name="android:paddingEnd">@dimen/view_space_8</item>
+        <item name="android:paddingTop">@dimen/view_space_8</item>
+        <item name="android:paddingBottom">@dimen/view_space_8</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">@dimen/view_space_8</item>
+        <item name="android:layout_marginEnd">@dimen/view_space_8</item>
+        <item name="btnTxtColor">@android:color/black</item>
+        <item name="btnTxtPressedColor">@android:color/transparent</item>
+    </style>
+
+    <!--Base style for width match parent and height wrap content for ConstraintLayout-->
+    <style name="ConsMatchWidthWrapHeight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TvScrollableSingle">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:freezesText">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <!--Base theme for all views whose width and height are match_parent-->
+    <style name="Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--Base theme for textViews-->
+    <style name="Txt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/txt_heading_18</item>
+        <item name="android:paddingLeft">@dimen/view_space_8</item>
+        <item name="android:paddingRight">@dimen/view_space_8</item>
+        <item name="android:layout_marginLeft">@dimen/view_space_8</item>
+        <item name="android:layout_marginRight">@dimen/view_space_8</item>
+        <item name="android:autoLink">all</item>
+    </style>
+
+    <!--Theme for header textViews-->
+    <style name="TxtHeader" parent="Txt">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Theme for headings-->
+    <style name="TxtHeader.TxtHeading">
+        <item name="android:paddingTop">@dimen/view_space_8</item>
+        <item name="android:paddingBottom">@dimen/view_space_8</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Theme for headings with drawables-->
+    <style name="TxtHeader.TxtHeading.Drawable">
+        <item name="android:drawablePadding">@dimen/view_space_8</item>
+        <item name="android:textSize">@dimen/txt_heading_18</item>
+    </style>
+
+    <!--Theme for titles-->
+    <style name="Txt.TxtTitle">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Theme for titles with drawables-->
+    <style name="Txt.TxtTitle.Drawable">
+        <item name="android:drawablePadding">@dimen/view_space_8</item>
+        <item name="android:padding">@dimen/view_space_8</item>
+    </style>
+
+
+</resources>

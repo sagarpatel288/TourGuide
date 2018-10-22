@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/Match"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            style="@style/Match"
+            android:orientation="vertical"
+            >
+
+            <!--Full Name-->
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/TxtHeader.TxtHeading.Drawable"
+                android:drawableStart="@drawable/ic_user_default"
+                android:paddingTop="@dimen/view_space_8"
+                android:paddingBottom="@dimen/view_space_8"
+                android:text="@string/label_name"
+                />
+
+            <!--Address-->
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/Txt.TxtTitle.Drawable"
+                android:layout_gravity="start"
+                android:autoLink="map"
+                android:drawableStart="@drawable/ic_person_location_black"
+                android:gravity="start"
+                android:singleLine="false"
+                android:text="@string/label_address"
+                android:textAlignment="textStart"
+                />
+
+            <!--Web Address-->
+            <TextView
+                android:id="@+id/tv_web"
+                style="@style/Txt.TxtTitle.Drawable"
+                android:autoLink="web"
+                android:drawableStart="@drawable/ic_web"
+                android:text="@string/label_web_address"
+                />
+
+            <!--Email-->
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/Txt.TxtTitle.Drawable"
+                android:autoLink="email"
+                android:drawableStart="@drawable/ic_email_black"
+                android:text="@string/label_email"
+                />
+
+            <!--Contact-->
+            <TextView
+                android:id="@+id/tv_phone_number"
+                style="@style/Txt.TxtTitle.Drawable"
+                android:autoLink="phone"
+                android:drawableStart="@drawable/ic_phone_black"
+                android:text="@string/label_phone"
+                />
+
+            <!--Working hours-->
+            <TextView
+                android:id="@+id/tv_working_hours"
+                style="@style/Txt.TxtTitle.Drawable"
+                android:drawableStart="@drawable/ic_working_hours_time"
+                android:text="@string/label_working_hours"
+                />
+
+            <TextView
+                style="@style/Txt.TxtTitle.Drawable"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_info_black"
+                android:gravity="center"
+                android:text="@string/label_about"
+                android:textSize="@dimen/text_heading_20"
+                android:textStyle="bold"
+                />
+
+            <com.library.android.common.customviews.CustomButton
+                android:id="@+id/cbtn_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/view_space_12"
+                android:padding="@dimen/view_space_12"
+                android:text="@string/placeholder_long"
+                android:textAlignment="viewStart"
+                app:btnTxtColor="@color/colorPrimary"
+                app:typeface="regular"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>
+

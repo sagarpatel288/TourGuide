@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.library.android.common.customviews.CustomImageView
+            android:id="@+id/civ_left_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_slider"
+            android:padding="@dimen/view_space_8"
+            android:src="@drawable/ic_drawer_toggle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.library.android.common.customviews.CustomImageView
+            android:id="@+id/civ_right_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_space_8"
+            android:src="@android:drawable/ic_menu_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary"
+            app:tintMode="src_atop"
+            />
+
+        <com.library.android.common.customviews.CustomImageView
+            android:id="@+id/civ_drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_space_16"
+            android:src="@android:drawable/arrow_down_float"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/civ_right_top"
+            app:layout_constraintRight_toLeftOf="@id/civ_right_top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary"
+            app:tintMode="src_atop"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/cbtn_title_top"
+            style="@style/TvScrollableSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/view_space_8"
+            android:paddingLeft="@dimen/view_space_8"
+            android:paddingEnd="@dimen/view_space_8"
+            android:paddingRight="@dimen/view_space_8"
+            android:text="@string/placeholder_long"
+            android:textSize="@dimen/txt_heading_22"
+            app:btnTxtColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@id/civ_drop_down"
+            app:layout_constraintLeft_toRightOf="@id/civ_left_top"
+            app:layout_constraintRight_toLeftOf="@id/civ_drop_down"
+            app:layout_constraintStart_toEndOf="@id/civ_left_top"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/cbtn_subtitle_bottom"
+            style="@style/TvScrollableSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/view_space_8"
+            android:paddingLeft="@dimen/view_space_8"
+            android:paddingEnd="@dimen/view_space_8"
+            android:paddingRight="@dimen/view_space_8"
+            android:text="@string/placeholder_long"
+            android:textSize="@dimen/txt_heading_22"
+            app:btnTxtColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@id/civ_drop_down"
+            app:layout_constraintLeft_toRightOf="@id/civ_left_top"
+            app:layout_constraintRight_toLeftOf="@id/civ_drop_down"
+            app:layout_constraintStart_toEndOf="@id/civ_left_top"
+            app:layout_constraintTop_toBottomOf="@id/cbtn_title_top"
+            />
+
+        <com.library.android.common.customviews.CustomButton
+            android:id="@+id/cbtn_title_center"
+            style="@style/TvScrollableSingle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/view_space_8"
+            android:paddingLeft="@dimen/view_space_8"
+            android:paddingEnd="@dimen/view_space_8"
+            android:paddingRight="@dimen/view_space_8"
+            android:text="@string/placeholder_long"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_heading_22"
+            android:visibility="gone"
+            app:btnTxtColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/civ_left_top"
+            app:layout_constraintEnd_toStartOf="@id/civ_drop_down"
+            app:layout_constraintLeft_toRightOf="@id/civ_left_top"
+            app:layout_constraintRight_toLeftOf="@id/civ_drop_down"
+            app:layout_constraintStart_toEndOf="@id/civ_left_top"
+            app:layout_constraintTop_toTopOf="@id/civ_left_top"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
